@@ -1,2 +1,0 @@
-# rakuten
-HTML/CSS
