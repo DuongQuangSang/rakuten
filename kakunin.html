@@ -28,10 +28,10 @@
         <div id="contents">
             <h2>楽天会員登録</h2>
             <form name="RegistForm" action="">
-                <div id="step1" class="step">
+                <div id="step2" class="step">
                     <ul>
-                        <li style="color: white;">会員情報の入力</li>
-                        <li style="color: #BF0000;">入力内容の確認</li>
+                        <li style="color: #BF0000;">会員情報の入力</li>
+                        <li style="color: white;">入力内容の確認</li>
                         <li style="color: #BF0000;">登録完了</li>
                     </ul>
                 </div>
@@ -41,7 +41,7 @@
                         <tr>
                             <th class="yel head">メールアドレス
                                 <td>
-                                    <em>duongquangsang17@gmail.com
+                                    <em id="emailShow">
                                     </em>
                                 </td>
                                 <td class="end"><a href=""></a></td>
@@ -51,7 +51,7 @@
                         <tr>
                             <th class="yel head">ユーザID
                                 <td>
-                                    <em>duongquangsang17@gmail.com<br>
+                                    <em id="userIdShow"><br>
                                         （メールアドレスをユーザIDとして使用します）
                                     </em>
                                 </td>
@@ -76,7 +76,7 @@
                         <tr>
                             <th class="yel head">氏名
                                 <td>
-                                    <em>DuongQuang Sang
+                                    <em id="seiMei">
                                     </em>
                                 </td>
                                 <td class="end"><a href=""></a></td>
@@ -86,7 +86,7 @@
                         <tr>
                             <th class="yel head">氏名（フリガナ）
                                 <td>
-                                    <em>ユォンワン サン
+                                    <em id="seiMeiKata">
                                     </em>
                                 </td>
                                 <td class="end"><a href=""></a></td>
@@ -113,7 +113,7 @@
 「入力画面に戻って変更する」ボタンを押すと、入力画面に戻ります。<br>
                 </p>
                 <p class="submit">
-                    <input type="submit" name="execMethod" value="登録する">
+                    <input type="submit" name="execMethod" value="登録する" onclick="kanryouFunc()">
                 </p>
             <p style="text-align: center;">
                 <a href="https://privacy.rakuten.co.jp/" target="_blank">個人情報保護方針</a>
@@ -121,6 +121,8 @@
         </div>
     </div>
     <div><hr size="1" style="display:block;">
-       <p style="text-align: center;"> © Rakuten Group, Inc.</p></div>
+       <p style="text-align: center;"> © Rakuten Group, Inc.</p>
+    </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
